@@ -99,6 +99,7 @@ html {
 @media screen and (max-width: 768px) {
     #frog {
         width: 300px; /* Smaller frog for tablets */
+		bottom: 8vh;
     }
 
     #cloud1 {
@@ -128,7 +129,7 @@ html {
 
 @media screen and (max-width: 480px) {
     #frog {
-        width: 180px; /* Smaller frog for mobile */
+        width:280px; /* Smaller frog for mobile */
     }
 
     #cloud1 {
@@ -145,7 +146,7 @@ html {
 
     #cloud3 {
         top: 18vh;
-        left: 40vw;
+        left: 42vw;
         width: 120px;
     }
 
