@@ -98,7 +98,7 @@ html {
 /* Responsive Design for tablets and mobile screens */
 @media screen and (max-width: 768px) {
     #frog {
-        width: 300px; /* Smaller frog for tablets */
+        width: 400px; /* Smaller frog for tablets */
 		bottom: 8vh;
     }
 
