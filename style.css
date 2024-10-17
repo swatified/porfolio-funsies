@@ -98,7 +98,7 @@ html {
 /* Responsive Design for tablets and mobile screens */
 @media screen and (max-width: 768px) {
     #frog {
-        width: 400px; /* Smaller frog for tablets */
+        width: 500px; /* Smaller frog for tablets */
 		bottom: 8vh;
     }
 
@@ -129,7 +129,7 @@ html {
 
 @media screen and (max-width: 480px) {
     #frog {
-        width:280px; /* Smaller frog for mobile */
+        width: 500px; /* Smaller frog for mobile */
     }
 
     #cloud1 {
