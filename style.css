@@ -17,53 +17,51 @@ html {
 	pointer-events: none;
 }
 
-/* MY STUFF */
-
+/* Frog Image */
 #frog {
     position: absolute;
-    bottom: 5vh; 
-    left: 50%; 
+    bottom: 5vh;
+    left: 50%;
     transform: translateX(-50%);
     width: 350px;
     z-index: 1;
 }
 
-#cloud1 {
+/* Cloud Styles */
+#cloud1, #cloud2, #cloud3, #cloud4 {
     position: absolute;
-    top: 29vh;  
+    z-index: 2;
+}
+
+#cloud1 {
+    top: 29vh;
     left: 8vw;
     width: 320px;
-    z-index: 2;
-	animation: float 1.1s ease-in-out infinite alternate;
+    animation: float 1.1s ease-in-out infinite alternate;
 }
 
 #cloud2 {
-    position: absolute;
     top: 10vh;
     left: 29vw;
     width: 260px;
-    z-index: 2;
-	animation: float 1s ease-in-out infinite alternate;
+    animation: float 1s ease-in-out infinite alternate;
 }
 
 #cloud3 {
-    position: absolute;
     top: 25vh;
     left: 53vw;
     width: 200px;
-    z-index: 2;
-	animation: float 1.2s ease-in-out infinite alternate;
+    animation: float 1.2s ease-in-out infinite alternate;
 }
 
 #cloud4 {
-    position: absolute;
     top: 34vh;
     left: 72vw;
     width: 220px;
-    z-index: 2;
-	animation: float 0.8s ease-in-out infinite alternate;
+    animation: float 0.8s ease-in-out infinite alternate;
 }
 
+/* Rain Drop Animation */
 .raindrop {
 	position: absolute;
 	background-color: #77aaff;
@@ -72,27 +70,88 @@ html {
 	animation: fall linear infinite;
 }
 
+/* Raindrop falling animation */
 @keyframes fall {
 	0% {
 		transform: translateY(-100px);
 		opacity: 0;
 	}
-
 	50% {
 		opacity: 1;
 	}
-
 	100% {
 		transform: translateY(calc(100vh + 100px));
 		opacity: 0;
 	}
 }
 
+/* Cloud floating animation */
 @keyframes float {
 	0% {
 		transform: translateY(0);
 	}
 	100% {
-		transform: translateY(-10px); /* Adjust this value for the float height */
+		transform: translateY(-10px);
 	}
-  }
+}
+
+/* Responsive Design for tablets and mobile screens */
+@media screen and (max-width: 768px) {
+    #frog {
+        width: 300px; /* Smaller frog for tablets */
+    }
+
+    #cloud1 {
+        top: 25vh;
+        left: 5vw;
+        width: 220px;
+    }
+
+    #cloud2 {
+        top: 10vh;
+        left: 20vw;
+        width: 180px;
+    }
+
+    #cloud3 {
+        top: 22vh;
+        left: 49vw;
+        width: 160px;
+    }
+
+    #cloud4 {
+        top: 37vh;
+        left: 65vw;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #frog {
+        width: 180px; /* Smaller frog for mobile */
+    }
+
+    #cloud1 {
+        top: 20vh;
+        left: 3vw;
+        width: 160px;
+    }
+
+    #cloud2 {
+        top: 8vh;
+        left: 15vw;
+        width: 140px;
+    }
+
+    #cloud3 {
+        top: 18vh;
+        left: 40vw;
+        width: 120px;
+    }
+
+    #cloud4 {
+        top: 28vh;
+        left: 60vw;
+        width: 140px;
+    }
+}
